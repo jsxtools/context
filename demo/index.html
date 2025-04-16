@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Context</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="og:title" content="Context" />
+		<meta name="description" content="A fully-typed context-protocol, an optional, tree-shakable implementation." />
+		<meta property="og:type" content="website" />
+		<script type="module">
+			import { ContextRequestEvent, createContext } from "./context.js"
+			import { getContextData, setContextData } from "./data.js"
+			import { observeContext, provideContext } from "./subscribers.js"
+
+			Object.assign(globalThis, { ContextRequestEvent, createContext, getContextData, setContextData, observeContext, provideContext })
+		</script>
+	</head>
+
+	<body>
+		<h1>Context</h1>
+	</body>
+</html>
