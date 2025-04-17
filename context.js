@@ -1,0 +1,1 @@
+class ContextRequestEvent extends Event{context;callback;subscribe;constructor(context,callback,subscribe){super("context-request",{bubbles:!0,composed:!0});this.context=context;this.callback=callback;this.subscribe=subscribe}}var createContext=(key)=>key;export{createContext,ContextRequestEvent}
