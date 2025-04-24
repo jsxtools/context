@@ -2,9 +2,11 @@
 	"$schema": "https://json.schemastore.org/package.json",
 	"name": "context-protocol",
 	"description": "A fully-typed implementation of the context-protocol, with support for subscriptions.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"license": "MIT-0",
+	"repository": "https://github.com/jsxtools/context-protocol",
+	"bugs": "https://github.com/jsxtools/context-protocol/issues",
 	"exports": {
 		".": "./dist/context.js",
 		"./mixins": "./dist/mixins.js",

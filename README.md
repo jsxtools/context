@@ -6,6 +6,8 @@
 
 **Context Protocol** is a fully-typed implementation of the [Context Protocol Proposal][spec-url], providing a robust way to manage and share context across web components and DOM elements.
 
+The Context Protocol is a standardized, platform-agnostic way for components to communicate shared state or services from any location in the DOM.
+
 ## Features
 
 - 🚀 **Fully Typed**: Full TypeScript support with comprehensive type safety and autocompletion.
