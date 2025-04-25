@@ -4,9 +4,7 @@
 [![Build Status][cli-img]][cli-url]
 [![Coverage][cov-img]][cov-url]
 
-**Context Protocol** is a fully-typed implementation of the [Context Protocol Proposal][spec-url], providing a robust way to manage and share context across web components and DOM elements.
-
-The Context Protocol is a standardized, platform-agnostic way for components to communicate shared state or services from any location in the DOM.
+**Context Protocol** is a fully-typed implementation of the [Context Protocol proposal][spec-url] — a standardized, platform-agnostic way for components to communicate shared state or services from any location in the DOM.
 
 ## Features
 
@@ -25,7 +23,7 @@ npm install context-protocol
 
 ## Basic Usage
 
-At its core, **Context Protocol** gives you a fully-typed implementation of the [Context Protocol Proposal](https://github.com/webcomponents-cg/community-protocols/blob/main/proposals/context.md), ready to use however you need.
+At its core, **Context Protocol** provides the typing and event-driven behavior as defined in the [Context Protocol proposal][spec-url].
 
 ```ts
 import { ContextRequestEvent, createContext } from "context-protocol"
@@ -40,11 +38,14 @@ document.dispatchEvent(
 )
 ```
 
-Use this low-level API with absolutely any library or framework that supports the [protocol][spec-url] — or build your own tools on top of it.
-Looking for a batteries-included solution instead?
-We’ve got you covered.
+Use this low-level API with any framework or library that follows the [proposal][spec-url] — or build your own tools on top of it.
 
-## Quick Start
+Prefer a more ergonomic, batteries-included approach?
+This package also offers a minimal, tree-shakeable [Subscription API](#subscription-api) built on top of Context Protocol, making it easy to provide and consume context out of the box.
+
+---
+
+# Subscription API
 
 Need live context updates?
 Use these helpers to get and set real-time context values.

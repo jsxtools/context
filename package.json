@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/package.json",
 	"name": "context-protocol",
 	"description": "A fully-typed implementation of the context-protocol, with support for subscriptions.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
 	"license": "MIT-0",
 	"repository": "https://github.com/jsxtools/context-protocol",
@@ -13,6 +13,8 @@
 		"./subscriptions": "./dist/subscriptions.js",
 		"./test/vitest": "./dist/test/vitest.js"
 	},
+	"main": "dist/context.js",
+	"types": "dist/context.d.ts",
 	"files": ["dist"],
 	"sideEffects": false,
 	"keywords": [
